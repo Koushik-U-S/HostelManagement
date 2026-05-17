@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <!-- ================= ADD STUDENT ================= -->
+    <servlet>
+        <servlet-name>AddStudentServlet</servlet-name>
+        <servlet-class>com.servlet.AddStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddStudentServlet</servlet-name>
+        <url-pattern>/AddStudentServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- ================= DISPLAY STUDENTS ================= -->
+    <servlet>
+        <servlet-name>DisplayStudentsServlet</servlet-name>
+        <servlet-class>com.servlet.DisplayStudentsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DisplayStudentsServlet</servlet-name>
+        <url-pattern>/DisplayStudentsServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- ================= DELETE STUDENT ================= -->
+    <servlet>
+        <servlet-name>DeleteStudentServlet</servlet-name>
+        <servlet-class>com.servlet.DeleteStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteStudentServlet</servlet-name>
+        <url-pattern>/DeleteStudentServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- ================= UPDATE STUDENT ================= -->
+    <servlet>
+        <servlet-name>UpdateStudentServlet</servlet-name>
+        <servlet-class>com.servlet.UpdateStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateStudentServlet</servlet-name>
+        <url-pattern>/UpdateStudentServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- ================= REPORT GENERATION ================= -->
+    <servlet>
+        <servlet-name>ReportServlet</servlet-name>
+        <servlet-class>com.servlet.ReportServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReportServlet</servlet-name>
+        <url-pattern>/ReportServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- ================= REPORT CRITERIA PAGE ================= -->
+    <servlet>
+        <servlet-name>ReportCriteriaServlet</servlet-name>
+        <servlet-class>com.servlet.ReportCriteriaServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReportCriteriaServlet</servlet-name>
+        <url-pattern>/ReportCriteriaServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- ================= WELCOME PAGE ================= -->
+    <welcome-file-list>
+        <welcome-file>dashboard.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>
